@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+nav {
+    background: #797979cc;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px !important;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #b6b6b6;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #ffffffcc;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    margin: 2rem 3rem;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.navbar .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.navbar-scroll {
+    height: 60px !important;
+    border-bottom: 1px solid #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-scroll-margin {
+    margin: 1rem 3rem;
+    margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 80%;
+    }
+
+    .navbar-scroll {
+        height: 60px;
+        border-bottom: 1px solid #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: 1rem .5rem;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .logo img {
+        width: 150px;
+
+    }
+
+    .logo img:hover {
+        cursor: pointer !important;
+        transform: scale(1.002);
+
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 5px !important;
+        text-decoration: none;
+        color: #333 !important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: .8rem !important;
+        letter-spacing: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu ul {
+        font-size: .8rem;
+        padding-left: 0 !important;
+
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .navbar-scroll {
+        height: 60px;
+        border-bottom: 1px solid #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: 1rem .5rem;
+    }
+
+    #navbarScroll {
+        height: 60px;
+        border-bottom: 1px solid #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar .menu ul li a {
+        font-size: .7rem;
+        padding: 10px 10px;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .proje-bilgileri {
+        padding-left: 0 !important;
+    }
+
+    .container {
+        margin-top: 4rem !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .projeinfp p {
+        font-size: 1rem !important;
+
+    }
+
+    .projeinfp {
+        margin-bottom: 1rem !important;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: 1rem 0;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .navbar .menu ul li a {
+        font-size: .7rem;
+        padding: 10px 7px;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .modal img {
+        position: absolute;
+        top: 25%;
+    }
+
+    .proje-title p {
+        font-size: .9rem !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .proje-bilgileri {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .bilgi-box {
+        padding: 0 !important;
+        margin: 0 !important;
+        transition: all 0.3s ease-in-out;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+
+    }
+
+    .bilgi-box p {
+        font-size: .8rem !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+    .container {
+        margin-top: 5.5rem !important;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: .2rem 0 0 0;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .navbar .menu ul li a {
+        font-size: .56rem !important;
+        padding: 10px 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar .menu ul {
+        padding: 0 0 0 0;
+    }
+
+    .logo img {
+        width: 35vw;
+    }
+
+    #navbarScroll {
+        height: 35px !important;
+        border-bottom: 1px solid #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .proje-title p {
+        font-size: .7rem !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .container {
+        margin-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: .2rem 0 0 0;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .navbar .menu ul li a {
+        font-size: .46rem !important;
+        padding: 10px 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar .menu ul {
+        padding: 0 0 0 0;
+    }
+
+    .logo img {
+        width: 35vw;
+    }
+
+    #navbarScroll {
+        height: 32px !important;
+        border-bottom: 1px solid #333;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: .2rem 0 0 0;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .navbar .menu ul li a {
+        font-size: .38rem !important;
+        padding: 10px 3px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar .menu ul {
+        padding: 0 0 0 0;
+    }
+
+    .logo img {
+        width: 35vw;
+    }
+
+    #navbarScroll {
+        height: 32px !important;
+        border-bottom: 1px solid #333;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.proje-box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.proje-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.proje-bilgileri {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+/* .bilgi-box:first-child {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+} */
+
+.bilgi-box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 .5rem;
+    padding: 0 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.bilgi-box p:first-child {
+    font-weight: 500;
+    margin-bottom: .8rem;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.bilgi-box p:last-child {
+    font-weight: 300;
+}
+
+.bilgi-box:not(:last-child) {
+    border-right: .1px solid #3333331c;
+}
+
+.proje-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    transition: all 0.3s ease-in-out;
+}
+
+.proje-box .proje {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.proje-box .proje img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    cursor: zoom-in;
+}
+
+#modalImg:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Büyük resim */
+.modal img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 95%;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Kapatma düğmesi */
+.modal span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* İleri ve Geri butonlarının stilini burada tanımlayın */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* İleri ve Geri butonlarının hover stilini burada tanımlayın */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Kapatma butonunun stilini burada tanımlayın */
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Kapatma butonunun hover stilini burada tanımlayın */
+.close:hover {
+    color: #bbb;
+}
+
+#myButton {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #33333352;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: hidden;
+}
+
+#myButton.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+}
+
+#myButton:hover {
+    background-color: rgba(31, 31, 31, 0.741);
+    transition: all 0.3s ease-in-out;
+}
+
+#myButton svg {
+    margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+    #myButton {
+        bottom: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    #myButton {
+        bottom: 2px;
+        right: 2px;
+    }
+}
+
+@media (max-width: 375px) {
+    #myButton {
+        bottom: 1px;
+        right: 1px;
+    }
+}

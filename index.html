@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./assets/icon.png" type="image/png" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/page-loader.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Ahmet Muzaffer Özkök | Architecture</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar-container">
+        <div class="row" id="navbarScroll">
+          <div class="col-12">
+            <div class="navbar" id="navbarScrollMargin">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./assets/logo/OZKOK.png" alt="logo" width="300" />
+                </a>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li><a href="hakkında.html">Hakkında</a></li>
+                  <li><a href="projeler.html">Projeler</a></li>
+                  <li><a href="haberler.html">Haberler</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Slider -->
+    <section>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-pause="false"
+      >
+        <div class="carousel-inner">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="9"
+                aria-label="Slide 10"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active imgimg2"
+                data-bs-interval="350000"
+              >
+                <img
+                  src="./assets/giris-sayfası/1.jpg"
+                  class="d-block w-100 img-none-select imgimg home"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">Mimaroba Klinik <span>2021</span></h5>
+                </div>
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/2.jpg"
+                  class="d-block w-100 img-none-select imgimg"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/3.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                  style="
+                    height: 100vh;
+                    object-fit: contain;
+                    object-position: center;
+                  "
+                />
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/4.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">
+                    ARCHROB AKADEMİ M. <span>2022</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/5.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/6.jpg"
+                  class="d-block w-100 img-none-selec imgimg kadıkoy"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">
+                    KADIKÖY ARKEOLOJİK M. <span>2023</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/7.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">
+                    SOSYAL KONUT PROJESİ<span>2021</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/8.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">
+                    POYRAZKÖY ÇİFTLİK OKULU <span>2021</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/9.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">PERADENT KLİNİK <span>2022</span></h5>
+                </div>
+              </div>
+              <div class="carousel-item imgimg2" data-bs-interval="350000">
+                <img
+                  src="./assets/giris-sayfası/10.jpg"
+                  class="d-block w-100 img-none-selec imgimg"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5 class="img-title">S EVİ<span>2022</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="son-olaylar d-flex align-items-center align-content-center">
+      <div class="relative flex items-center justify-center mt-14">
+        <div class="max-w-7xl w-full m-4">
+          <div class="absolute z-20 bg-white px-2 pt-2 text-xl fontson">
+            Son Olaylar
+          </div>
+          <div class="relative border-y-2 my-4 mb-2 border-neutral-900 w-full">
+            <div class="py-12 grid sm:grid-cols-5 gap-1">
+              <div class="col-span-3 row-span-3">
+                <div class="img-container">
+                  <a href="./haberler.html">
+                    <img
+                      class="sonimg slide-son"
+                      src="./assets/giris-sayfası/son-olaylar/odultoreni.jpg"
+                      alt=""
+                    />
+                    <div class="img-title">
+                      MEKAN 2022 YARIŞMASI KOLOKYUM TÖRENI YAPILDI
+                    </div></a
+                  >
+                </div>
+              </div>
+              <div class="col-span-2 row-span-2">
+                <a href="projeler.html">
+                  <img class="sonimg" src="./assets/giris-sayfası/4.jpg" alt=""
+                /></a>
+              </div>
+              <div class="col-span-1">
+                <a href="haberler.html">
+                  <img
+                    class="sonimg"
+                    src="./assets/giris-sayfası/son-olaylar/syarismasonucu.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="">
+                <a href="haberler.html">
+                  <img
+                    class="sonimg"
+                    src="./assets/giris-sayfası/son-olaylar/ikinciliks.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-5 socialmedia">
+            <span class="me-2"
+              ><a
+                href="
+                mailto:ahmetmuzafferozkok@gmail.com"
+                >ahmetmuzafferozkok@gmail.com</a
+              ></span
+            >
+            <div>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Layer 1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ozkokarchitects/"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  ></path>
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                  <path d="M16.5 7.5l0 .01"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./loader.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
